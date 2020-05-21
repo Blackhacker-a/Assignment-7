@@ -15,15 +15,18 @@ int main(){
 		printf("\n");
 	}
 	
-	int sum=0;
+	int sum1=0,sum2=0;
 	for(int i=0;i<4;i++){
 		for(int j=0;j<4;j++){
-			if(i==j or j==i){
-			   sum+=arr[i][j]+arr[j][i];
+			if(i==j){
+			   sum1+=arr[i][j];
+			}
+			if(i+j==3){
+				sum2+=arr[i][j];
 			}	
 		}
 	}
-    float tbc=(float)sum/8;
+    float tbc=(float)sum1/4;
     printf("%0.3f",tbc);
 	
 	}
